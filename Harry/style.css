@@ -1,0 +1,321 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    scroll-behavior: smooth;
+}
+/* fonts*/
+@import url("webfonts/fa-brands-400.svg");
+@import url("webfonts/fa-brands-400.woff");
+@font-face {
+    font-family: 'Architects Daughter' ;
+    src: url("fonts/ArchitectsDaughter-Regular.ttf") ;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+/* header section */
+header{
+    background: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    
+
+}
+header .logo img{
+    height: 100px;
+}
+header nav{
+    width: 50%;
+    
+}
+header nav ul{
+    display: flex;
+   justify-content: space-around;
+   padding: 1rem;
+   list-style: none;
+}
+
+header nav ul li a{
+    color: black;
+    font-size: 2rem;
+    font-family: 'Architects Daughter';
+    padding: 10px;
+    
+}
+header nav ul .active a{
+    background-color: black;
+    color:white;
+    border-radius: 50px;
+}
+header nav ul li a:hover{
+    background-color: black;
+    color:white;
+    border-radius: 50px;
+}
+
+.showcase{
+    background: url("images/showase.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 525px;
+}
+.showcase p{
+    color: #DAD5AB;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 150px; 
+    font-family: 'Architects Daughter';
+}
+.showcase .citer{
+    color: #DAD5AB;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    color:white
+}
+
+/* the books section */
+ .Books .container img{
+    height:400px;
+}
+.Books .container{
+    padding: 10px;
+    
+}
+.Books {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    background-image: url("images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.Books .container p,.Books .container a{
+    font-family:  'Roboto Mono', monospace; 
+    color:white;
+    width:300px;
+    padding: 1rem;  
+    font-weight: Bold;
+}
+
+.Books .container a{
+    background-color: white;
+    border-radius: 50px;
+    color:black;
+    cursor: pointer;
+    display: inline-block;
+    margin-top:1px;
+    text-align: center;
+
+}
+.Books .container:nth-child(7){
+    justify-self: center;
+}
+.Books .container a:hover{
+    background-color: #F21170;
+    color:white;
+}
+
+.title1{
+    background-color:  #8f8b81;
+    color:white;
+    width:100%;
+    text-align: center;
+    font-family:'Architects Daughter', cursive ;
+    text-decoration: underline;
+    text-decoration-color: #FFC107;
+    padding: 1rem;
+}
+
+/*movies section */
+
+.movies{
+    background-color: #161616;
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.movies h1{
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2rem;
+    color:#F21170;
+}
+.movies p, .movies ul{
+    padding:1rem;
+
+}
+.movies ul li{
+    list-style: none;
+    padding-top: 10px;
+}
+.movies ul li i{
+   color: #50CB93;
+}
+
+/* the author section */
+.the-author{
+    background-color: #161616;
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    padding-top:10px;
+}
+.the-author .container{
+    padding: 1rem;
+    border: 1px solid white;
+    width:500px;
+    margin: auto;
+}
+.the-author h1{
+    text-align: start;
+    margin-left: 15px;
+    color:#F21170;
+}
+
+.container h2{
+    padding: 1rem;
+    color:#F21170;
+}
+.container .btn{
+    background-color: white;
+    border-radius: 50px;
+    color:black;
+    cursor: pointer;
+    display: inline-block;
+    margin-top:12px;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+.container .btn:hover{
+    background-color: #F21170;
+    color:white;
+}
+
+/* footer */
+footer{
+    font-family: 'Roboto Mono', monospace ;
+    background-color: #EEEEEE;
+}
+footer h3{
+    text-align: center;
+    padding: 10px;
+}
+footer i{
+    color:red;
+    padding: 5px;
+}
+footer .social{
+    text-align: center;
+}
+footer .social i{
+    color:#39A2DB;
+}
+footer .social .git{
+    color:#595260;
+}
+form{
+    text-align: center;
+    padding: 2rem;
+}
+form input[type=text]{
+    width: 400px;
+    height: 100px;
+    margin-bottom:10px ;
+
+    
+}
+footer button{
+    display: block;
+    cursor: pointer;
+    margin:auto;
+    border: none;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    width:100px;
+}
+footer button:hover{
+    opacity: 0.7;
+}
+span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: red;
+}
+
+/* responsive code */
+
+@media screen and (max-width:1000px) {
+    .Books {
+            grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+
+@media screen  and (max-width:885px) {
+    header nav ul li a{
+        
+        font-size: 1.5rem;
+        font-family: 'Architects Daughter';
+        padding: 7px;
+        
+    }
+}
+@media screen  and (max-width:645px) {
+    header{
+        height: 200px;
+    }
+    header nav ul{
+      flex-direction: column;
+      
+    }
+    header nav ul li{
+        padding: 5px;
+    }
+    .Books {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    
+    }   
+}
+
+@media screen and (max-width:533px) {
+    .showcase p{
+        font-size: 1.5rem;
+    }
+    .showcase .citer{
+        font-size: 1rem;
+    }
+    .the-author .container{
+        width: 400px;
+    }
+    form input[type=text]{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    
+    .the-author .container{
+        width: 200px;
+    }
+    form input[type=text]{
+        width: 200px;
+    }
+}
